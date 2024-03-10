@@ -1,0 +1,50 @@
+body {
+    transition: background-color 0.5s ease;
+
+    padding-left: 15%;
+        padding-right: 15%;
+}
+
+.container {
+   width: 800px;
+   height: 170px;
+   
+   
+   
+   
+   
+   
+    text-align: center;
+    padding: 80px;
+    border-radius: 28%;
+    background-color: #bfbfbf;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+
+body {
+    transition: background-color 0.3s ease;
+  }
+  
+  .container {
+    padding: 80px;
+  }
+  
+  .dark-mode {
+    background-color: #171717; 
+    color: #ffffff; 
+}
+  
+.buttonTM{
+
+    position: absolute;
+    right: 40px;  
+    top: 40px;
+    width: 60px;
+    height: 60px;
+}
+
+.pink{
+font-size: 20px;
+
+}
