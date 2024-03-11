@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¡Albumes!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    button {
+      color: #fff;
+      background-color: #fff !important;
+      margin-top: 30px !important;
+      padding: 15px !important;
+      width: 200px;
+      border-radius: 20px;
+      border: 2px solid #000;
+      font-weight: bold !important;
+    }
+
+    button:hover {
+      color: #fff;
+      border: 2px solid #fff;
+      background-color: #000000 !important;
+    }
+
+    .bg-spotify {
+      position: relative;
+      z-index: 0;
+    }
+
+    .bg-spotify::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F667771.jpg&f=1&nofb=1&ipt=ec79e652f12b73327693fab349e33b1c6546257f448d10e8e428840d57052cb6&ipo=images');
+      background-size: cover;
+      filter: blur(10px);
+      z-index: -1;
+    }
+
+    .main {
+      position: relative;
+      z-index: 1;
+    }
+
+    h2 {
+      color: #fff;
+      margin-top: -15px !important;
+      margin-left: 40px !important; 
+      margin-bottom: 10px;
+    }
+
+    .playlist {
+      padding: 30px !important;
+      border: solid 0.5px #fff;
+    }
+
+    .iconMusic {
+      margin-left: 10px;
+      margin-top: -15px !important;
+      padding: 25px !important;
+    }
+    .playlist img {
+      border-radius: 5px 0px 0px 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="w-full bg-slate-500 flex flex-col justify-center items-center h-full min-h-screen bg-spotify">
+    <div class="mx-auto w-[80%] flex items-center h-full">
+      <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 w-full h-fit flex-wrap gap-6 items-center">
+        <article class="w-full flex flex-col gap-2">
+          <h2 class="text-2xl text-center w-full mb-5">Album 1</h2>
+          <div class="flex flex-col gap-2 content">
+            <a class="w-full px-2 rounded-lg bg-gray-900/50 backdrop-blur-lg h-[32px] min-h-[32px] py-1 hover:bg-gray-800/50 text-white flex group playlist relative overflow-hidden"
+              href="https://open.spotify.com/intl-es/album/65CVHjaSwJ4xMNJICnQ4Y6?si=705ebae832ed4c62" target="_blank">
+              <div class="bg-spotify absolute top-0 left-0 w-1/3 h-full bg-cover bg-center"></div>
+              <img class="absolute h-full top-0 left-0"
+                src="https://inba.gob.mx/multimedia/prensa/galerias/13055/13055-IMG_BG_POST-jose_jose_%C2%A9cortesia_sony_music.jpg"
+                alt="Marie, aquí va tu álbum">
+              <h2 class="w-full relative z-10">Marie, aquí va tu álbum</h2>
+              <div class="absolute right-0 top-[1px] hidden group-hover:block text-green-500 iconMusic">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M10.5 17q1.05 0 1.775-.725Q13 15.55 13 14.5V9h3V7h-4v5.5q-.325-.225-.7-.363q-.375-.137-.8-.137q-1.05 0-1.775.725Q8 13.45 8 14.5q0 1.05.725 1.775Q9.45 17 10.5 17Zm1.5 5q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Zm0-2q3.35 0 5.675-2.325Q20 15.35 20 12q0-3.35-2.325-5.675Q15.35 4 12 4Q8.65 4 6.325 6.325Q4 8.65 4 12q0 3.35 2.325 5.675Q8.65 20 12 20Zm0-8Z" />
+                </svg>
+              </div>
+            </a>
+
+            <a class="w-full px-2 rounded-lg bg-gray-900/50 backdrop-blur-lg h-[32px] min-h-[32px] py-1 hover:bg-gray-800/50 text-white flex group playlist"
+              href="https://open.spotify.com/playlist/37i9dQZF1EQlZ5S0kXf8kf?si=62c6ad4fd3354767" target="_blank">
+              <img class="absolute h-full top-0 left-0"
+                src="https://inba.gob.mx/multimedia/prensa/galerias/13055/13055-IMG_BG_POST-jose_jose_%C2%A9cortesia_sony_music.jpg"
+                alt="Marie, aquí va tu álbum">
+              <h2 class="w-full">Marie aqui va tu album</h2>
+              <div class="absolute right-0 top-[1px] hidden group-hover:block text-green-500 iconMusic">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M10.5 17q1.05 0 1.775-.725Q13 15.55 13 14.5V9h3V7h-4v5.5q-.325-.225-.7-.363q-.375-.137-.8-.137q-1.05 0-1.775.725Q8 13.45 8 14.5q0 1.05.725 1.775Q9.45 17 10.5 17Zm1.5 5q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Zm0-2q3.35 0 5.675-2.325Q20 15.35 20 12q0-3.35-2.325-5.675Q15.35 4 12 4Q8.65 4 6.325 6.325Q4 8.65 4 12q0 3.35 2.325 5.675Q8.65 20 12 20Zm0-8Z" />
+                </svg>
+              </div>
+            </a>
+            <a class="w-full px-2 rounded-lg bg-gray-900/50 backdrop-blur-lg h-[32px] min-h-[32px] py-1 hover:bg-gray-800/50 text-white flex group playlist"
+              href="https://open.spotify.com/playlist/37i9dQZF1EVGJJ3r00UGAt?si=6773be2699174884" target="_blank">
+              <img class="absolute h-full top-0 left-0"
+                src="https://inba.gob.mx/multimedia/prensa/galerias/13055/13055-IMG_BG_POST-jose_jose_%C2%A9cortesia_sony_music.jpg"
+                alt="Marie, aquí va tu álbum">
+              <h2 class="w-full">Marie aqui va tu album</h2>
+              <div class="absolute right-0 top-[1px] hidden group-hover:block text-green-500 iconMusic">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M10.5 17q1.05 0 1.775-.725Q13 15.55 13 14.5V9h3V7h-4v5.5q-.325-.225-.7-.363q-.375-.137-.8-.137q-1.05 0-1.775.725Q8 13.45 8 14.5q0 1.05.725 1.775Q9.45 17 10.5 17Zm1.5 5q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Zm0-2q3.35 0 5.675-2.325Q20 15.35 20 12q0-3.35-2.325-5.675Q15.35 4 12 4Q8.65 4 6.325 6.325Q4 8.65 4 12q0 3.35 2.325 5.675Q8.65 20 12 20Zm0-8Z" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </article>
+        <article class="w-full flex flex-col gap-2 ">
+          <h2 class="text-2xl text-center w-full mb-5">Album 2</h2>
+          <div class="flex flex-col gap-2">
+            <a class="w-full px-2 rounded-lg bg-gray-900/50 backdrop-blur-lg h-[32px] min-h-[32px] py-1 hover:bg-gray-800/50 text-white flex group playlist"
+              href="https://open.spotify.com/intl-es/album/65CVHjaSwJ4xMNJICnQ4Y6?si=705ebae832ed4c62" target="_blank">
+              <img class="absolute h-full top-0 left-0"
+                src="https://inba.gob.mx/multimedia/prensa/galerias/13055/13055-IMG_BG_POST-jose_jose_%C2%A9cortesia_sony_music.jpg"
+                alt="Marie, aquí va tu álbum">
+              <h2 class="w-full">Marie aqui va tu album </h2>
+              <div class="absolute right-0 top-[1px] hidden group-hover:block text-green-500 iconMusic">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M10.5 17q1.05 0 1.775-.725Q13 15.55 13 14.5V9h3V7h-4v5.5q-.325-.225-.7-.363q-.375-.137-.8-.137q-1.05 0-1.775.725Q8 13.45 8 14.5q0 1.05.725 1.775Q9.45 17 10.5 17Zm1.5 5q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Zm0-2q3.35 0 5.675-2.325Q20 15.35 20 12q0-3.35-2.325-5.675Q15.35 4 12 4Q8.65 4 6.325 6.325Q4 8.65 4 12q0 3.35 2.325 5.675Q8.65 20 12 20Zm0-8Z" />
+                </svg>
+              </div>
+            </a>
+
+            <a class="w-full px-2 rounded-lg bg-gray-900/50 backdrop-blur-lg h-[32px] min-h-[32px] py-1 hover:bg-gray-800/50 text-white flex group playlist"
+              href="https://open.spotify.com/playlist/37i9dQZF1EQlZ5S0kXf8kf?si=62c6ad4fd3354767" target="_blank">
+              <img class="absolute h-full top-0 left-0"
+                src="https://inba.gob.mx/multimedia/prensa/galerias/13055/13055-IMG_BG_POST-jose_jose_%C2%A9cortesia_sony_music.jpg"
+                alt="Marie, aquí va tu álbum">
+              <h2 class="w-full">Marie aqui va tu album</h2>
+              <div class="absolute right-0 top-[1px] hidden group-hover:block text-green-500 iconMusic">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M10.5 17q1.05 0 1.775-.725Q13 15.55 13 14.5V9h3V7h-4v5.5q-.325-.225-.7-.363q-.375-.137-.8-.137q-1.05 0-1.775.725Q8 13.45 8 14.5q0 1.05.725 1.775Q9.45 17 10.5 17Zm1.5 5q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Zm0-2q3.35 0 5.675-2.325Q20 15.35 20 12q0-3.35-2.325-5.675Q15.35 4 12 4Q8.65 4 6.325 6.325Q4 8.65 4 12q0 3.35 2.325 5.675Q8.65 20 12 20Zm0-8Z" />
+                </svg>
+              </div>
+            </a>
+            <a class="w-full px-2 rounded-lg bg-gray-900/50 backdrop-blur-lg h-[32px] min-h-[32px] py-1 hover:bg-gray-800/50 text-white flex group playlist"
+              href="https://open.spotify.com/playlist/37i9dQZF1EVGJJ3r00UGAt?si=6773be2699174884" target="_blank">
+              <img class="absolute h-full top-0 left-0"
+                src="https://inba.gob.mx/multimedia/prensa/galerias/13055/13055-IMG_BG_POST-jose_jose_%C2%A9cortesia_sony_music.jpg"
+                alt="Marie, aquí va tu álbum">  
+              <h2 class="w-full">Marie aqui va tu album</h2>
+              <div class="absolute right-0 top-[1px] hidden group-hover:block text-green-500 iconMusic">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M10.5 17q1.05 0 1.775-.725Q13 15.55 13 14.5V9h3V7h-4v5.5q-.325-.225-.7-.363q-.375-.137-.8-.137q-1.05 0-1.775.725Q8 13.45 8 14.5q0 1.05.725 1.775Q9.45 17 10.5 17Zm1.5 5q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Zm0-2q3.35 0 5.675-2.325Q20 15.35 20 12q0-3.35-2.325-5.675Q15.35 4 12 4Q8.65 4 6.325 6.325Q4 8.65 4 12q0 3.35 2.325 5.675Q8.65 20 12 20Zm0-8Z" />
+                </svg>
+              </div>
+            </a>
+        </article>
+      </div>
+    </div>
+    <button><a href="./Docs/Conocenos.html">¡Conócenos!</a></button>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    transition: background-color 0.5s ease-in-out;
+    background-color: rgb(223, 220, 220);
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.buttonTM {
+    position: fixed;
+    right: 40px;
+    top: 40px;
+    width: 60px;
+    height: 60px;
+}
+
+.dark-mode {
+    background-color: #171717;
+    color: #ffffff;
+}
+
+.dark-mode .content {
+    border: 2px solid #fff;
+}
+
+.dark-mode .elements section p {
+    color: #000;
+}
+
+.content {
+    padding: 80px;
+    border-radius: 28%;
+    transition: background-color 0.5s ease-in-out;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    border: 1px solid #000;
+    /*AQUI SE PONE LA IMAGEN EN CSS, EN CUALQUIER MOMENTO PUEDES*/
+    background-image: url('https://wallpapercave.com/wp/wp7785106.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.content h1 {
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin-bottom: 10px;
+    line-height: 1.5
+}
+
+section img {
+    width: 200px;
+    height: 200px;
+}
+
+.elements {
+    padding: 20px;
+    margin-top: 50px;
+    background-color: azure;
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    gap: 20px;
+    border: 1px solid #000;
+}
+
+.elements section {
+    border-right: 1px solid black;
+    padding-right: 20px;
+}
+
+.elements section h1 {
+    color: #000;
+    font-size: 12pt;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.elements section p {
+    text-align: center;
+}
+
+.elements img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.pink {
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.btnPlay {
+    /*AQUI DE COLOR REALMENTE LE ESOTY AGREGANDO UNA IMAGEN DE FONDO*/
+    background-image: url('https://wallpapercave.com/wp/wp7785106.jpg');
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btnPlay:hover {
+    color: rgb(100, 38, 15);
+}
