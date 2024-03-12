@@ -17,7 +17,7 @@
   flex: auto;
   margin: 20px 20px;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
-  border: 2px solid black;
+  border: 0px solid black;
   background-color: rgba(245, 236, 236, 0.8);
   border-radius: 10px;
 }
@@ -32,10 +32,9 @@
 .content-section .card h2 {
   margin: 15px 0px;
   font-size: 28px;
-  color: #ffffff;
+  color: #000;
   font-family: sans-serif;
-  /*COLOR DE FONDO DE LAS CARDS*/
-  background-color: #2e8bd8;
+
 }
 
 .content-section .card p {
