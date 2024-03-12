@@ -48,7 +48,7 @@ h2 {
     text-align: justify;
     border: 1px solid #000;
     /*AQUI SE PONE LA IMAGEN EN CSS, EN CUALQUIER MOMENTO PUEDES*/
-    background-image: url('https://wallpapercave.com/wp/wp7785106.jpg');
+    background-image: url('./Image/imagen\ del\ index.jpeg');
     background-size: cover;
     background-position: center;
     opacity: 0.7;
